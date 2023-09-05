@@ -102,3 +102,50 @@ button#clearAll {
 button#clearAll:hover {
   background-color: #c0392b;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .todo-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-box,
+  .task-list-box {
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: none;
+  }
+
+  .input-box {
+    order: 1;
+  }
+
+  .task-list-box {
+    order: 2;
+  }
+}

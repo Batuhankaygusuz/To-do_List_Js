@@ -21,3 +21,84 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+}
+
+.todo-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.input-box,
+.task-list-box {
+  width: 48%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.input-box {
+  background-color: #f9f9f9;
+  height: calc(100% - 40px);
+}
+
+.task-list-box {
+  background-color: #fff;
+  height: calc(100% - 40px);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button#clearAll {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button#clearAll:hover {
+  background-color: #c0392b;
+}

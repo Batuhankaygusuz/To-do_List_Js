@@ -6,5 +6,25 @@
     <title>To-Do_List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <section class="todo-area">
+        <div class="input-box">
+          <h2>Ekle</h2>
+          <input type="text" id="task" placeholder="Ekleyiniz..." />
+          <button id="addTask">Ekle</button>
+          <button id="clearAll">Tümünü Sil</button>
+        </div>
+        <div class="task-list-box">
+          <h2>Liste</h2>
+          <ul id="taskList"></ul>
+        </div>
+      </section>
+      <footer>&copy; 2023 Berat Batuhan Kaygusuz</footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
